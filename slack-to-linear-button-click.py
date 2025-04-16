@@ -11,8 +11,7 @@ from logging.handlers import RotatingFileHandler
 app = Flask(__name__)
     
 # Direct configuration values
-env:
-  LINEAR_API_KEY: ${{ secrets.LINEAR_API_KEY }}
+LINEAR_API_KEY = os.environ.get('LINEAR_API_KEY')
 LINEAR_TEAM_ID = "d28c9671-69c6-4305-aca7-3fd4196cb345"
 SLACK_BOT_TOKEN = "xoxb-8461790309746-8460948536790-8COIT7GAuclUmziViPQGVcTK"
 SERVICENOW_URL = "https://dev278567.service-now.com"
