@@ -5,6 +5,7 @@ import requests
 import json
 import logging
 import sys
+import os
 from datetime import datetime
 from logging.handlers import RotatingFileHandler
 
