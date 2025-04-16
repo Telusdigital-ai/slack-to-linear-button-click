@@ -303,4 +303,4 @@ def send_slack_notification(incident, linear_issue):
 if __name__ == '__main__':
     app.logger.info("Starting Flask application")
     test_connections()
-    app.run(debug=True, host='0.0.0.0', port=5002)
+    app.run(host='0.0.0.0', port=5002)
