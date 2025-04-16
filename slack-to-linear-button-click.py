@@ -13,10 +13,10 @@ app = Flask(__name__)
     
 # Direct configuration values
 LINEAR_API_KEY = os.environ.get('LINEAR_API_KEY')
-LINEAR_TEAM_ID = "d28c9671-69c6-4305-aca7-3fd4196cb345"
-SLACK_BOT_TOKEN = "xoxb-8461790309746-8460948536790-8COIT7GAuclUmziViPQGVcTK"
-SERVICENOW_URL = "https://dev278567.service-now.com"
-SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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"
+LINEAR_TEAM_ID = os.environ.get('LINEAR_TEAM_ID')
+SLACK_BOT_TOKEN = os.environ.get('SLACK_BOT_TOKEN')
+SERVICENOW_URL = os.environ.get('SERVICENOW_URL')
+SLACK_WEBHOOK_URL = os.environ.get('SLACK_WEBHOOK_URL')
 
 # Set up logging
 def setup_logging():
